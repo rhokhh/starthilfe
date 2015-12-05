@@ -3,4 +3,6 @@
 /dev.db
 /node_modules/
 /virtualenv
+/starthilfe/templates/_scripts.html
+/starthilfe/templates/_styles.html
 /.idea/
