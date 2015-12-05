@@ -1,4 +1,5 @@
 *.pyc
 .*.swp
+/dev.db
 /node_modules/
 /virtualenv

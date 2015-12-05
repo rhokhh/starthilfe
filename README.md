@@ -1,4 +1,4 @@
-# {{ project_name }}
+# starthilfe
 
 ## Getting Started
 
@@ -10,4 +10,6 @@ pip install -r requirements.txt
 ./manage.py migrate
 ./manage.py loaddata sites
 ./manage.py runserver
+npm install
+npm run build
 ```
