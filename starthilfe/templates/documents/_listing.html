@@ -2,8 +2,11 @@
  {% for member in members %}
  <li>
   <a href="{{ member.get_absolute_url }}">{{ member }}</a>
+  {% if member.kind == 'folder' %}
+  <a href="{% url 'documents_folder_share' member.pk %}">share</a>
+  {% endif %}
   {% if member.kind == 'document' %}
-  <a href="{% url 'documents_document_delete' %}">×</a>
+  <a href="{% url 'documents_document_delete' %}">delete</a>
   {% endif %}
  </li>
  {% endfor %}
