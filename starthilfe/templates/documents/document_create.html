@@ -1,5 +1,6 @@
 {% include 'documents/_breadcrumbs.html' %}
 
+<h2>Create document</h2>
 <form action="." method="post" enctype="multipart/form-data">{% csrf_token %}
 	{{ form }}
 	<input type="submit">
