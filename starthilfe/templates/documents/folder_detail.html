@@ -1,4 +1,6 @@
 {% include 'documents/_breadcrumbs.html' %}
 {% include 'documents/_listing.html' %}
 
-<p>can_share: {{ can_share }}</p>
+{% if can_share %}
+<a href="{% url 'documents_folder_share' folder.pk %}">share</a>
+{% endif %}
