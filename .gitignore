@@ -1,8 +1,13 @@
 *.pyc
 .*.swp
+.swp
+/Makefile
 /dev.db
 /node_modules/
-/virtualenv
 /starthilfe/templates/_scripts.html
 /starthilfe/templates/_styles.html
 /.idea/
+/starthilfe/site_media/
+/tags
+/virtualenv/
+
