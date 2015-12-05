@@ -1,8 +1,6 @@
-{% if parent %}
 {% with folder=parent %}
 {% include 'documents/_breadcrumbs.html' %}
 {% endwith %}
-{% endif %}
 
 <form action="." method="post">{% csrf_token %}
 	{{ form }}

@@ -1,7 +1,12 @@
 <ul>
- {% for folder in members %}
- <li><a href="{{ folder.get_absolute_url }}">{{ folder }}</a></li>
+ {% for member in members %}
+ <li>
+  <a href="{{ member.get_absolute_url }}">{{ member }}</a>
+  {% if member.kind == 'document' %}
+  <a href="{% url 'documents_document_delete' %}">×</a>
+  {% endif %}
+ </li>
  {% endfor %}
- <li><a href="{% url 'documents_folder_create' %}?p={{ folder.pk }}">Add a folder...</a></li>
- <li><a href="{% url 'documents_document_create' %}?f={{ folder.pk }}">Add a document...</a></li>
+ <li><a href="{% url 'documents_folder_create' %}{% if folder %}?p={{ folder.pk }}{% endif %}">Add a folder...</a></li>
+ <li><a href="{% url 'documents_document_create' %}{% if folder %}?f={{ folder.pk }}{% endif %}">Add a document...</a></li>
 </ul>

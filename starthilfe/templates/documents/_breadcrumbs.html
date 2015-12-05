@@ -1,7 +1,9 @@
 <ul>
  <li><a href="{% url 'documents_index' %}">root</a></li>
+ {% if folder %}
  {% for folder in folder.breadcrumbs %}
  <li><a href="{{ folder.get_absolute_url }}">{{ folder }}</a></li>
  {% endfor %}
  <li><a href="{{ folder.get_absolute_url }}">{{ folder }}</a></li>
+ {% endif %}
 </ul>
