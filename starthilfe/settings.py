@@ -134,6 +134,7 @@ INSTALLED_APPS = [
     "metron",
     "pinax.eventlog",
     "pinax.blog",
+    "pinax.documents",
 
     # project
     "starthilfe",
