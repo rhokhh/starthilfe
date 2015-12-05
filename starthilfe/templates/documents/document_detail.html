@@ -1,1 +1,5 @@
-<p>Document: {{ document }}</p>
+{% with folder=document.folder %}
+{% include 'documents/_breadcrumbs.html' %}
+{% endwith %}
+
+<p><a href="{{ document.download_url }}">{{ document }}</a></p>

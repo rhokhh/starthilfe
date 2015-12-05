@@ -1,0 +1,7 @@
+<ul>
+ {% for folder in members %}
+ <li><a href="{{ folder.get_absolute_url }}">{{ folder }}</a></li>
+ {% endfor %}
+ <li><a href="{% url 'documents_folder_create' %}?p={{ folder.pk }}">Add a folder...</a></li>
+ <li><a href="{% url 'documents_document_create' %}?f={{ folder.pk }}">Add a document...</a></li>
+</ul>

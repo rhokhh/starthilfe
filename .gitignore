@@ -1,7 +1,9 @@
 *.pyc
 .*.swp
 .swp
+/.vimproject
 /Makefile
+/Session.vim
 /dev.db
 /node_modules/
 /starthilfe/templates/_scripts.html
