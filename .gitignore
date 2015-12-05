@@ -1,15 +1,14 @@
 *.pyc
 .*.swp
 .swp
+/.idea/
 /.vimproject
 /Makefile
 /Session.vim
 /dev.db
 /node_modules/
+/starthilfe/site_media/
 /starthilfe/templates/_scripts.html
 /starthilfe/templates/_styles.html
-/.idea/
-/starthilfe/site_media/
 /tags
 /virtualenv/
-
